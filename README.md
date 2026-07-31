@@ -1,125 +1,129 @@
 # coding-instructions
 
-> Andrej Karpathy 编程准则 + Conventional Commits 提交规范 + 功能分支工作流 + 可爱语气回复规范
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-一套面向 AI 辅助编程的 **Agent Skill** 包：帮助个人与小团队在借助 AI 写代码时保持代码简洁、提交历史清晰、合并流程可控。
+> Andrej Karpathy coding principles + Conventional Commits + feature-branch workflow + cute-tone replies
 
-## 特性
+An **Agent Skill** pack for AI-assisted coding: helps individuals and small teams keep code simple, commit history clean, and merges controlled while coding with AI.
 
-- **极简主义编码**：从最短、自包含、零依赖的实现开始，逐步增加复杂度
-- **先复制，再创新**：优先复用成熟方案，一次只引入一个复杂度
-- **理解底层原理**：避免黑盒调用，代码体现对底层机制的理解
-- **功能分支开发**：从当前上游分支切出独立分支；兼容普通仓库与 `git worktree`
-- **Conventional Commits 提交规范**：type + 中文描述（详见 `references/commit-messages.md`）
-- **测试通过后合并**：合并前必须完成测试并请求许可，禁止自行合并
-- **可爱语气对话**：所有回复使用可爱、温柔、撒娇的语气
+## Features
 
-## Skill 包结构
+- **Minimalist coding**: start from the shortest, self-contained, zero-dependency implementation; add complexity gradually
+- **Copy first, innovate later**: reuse proven solutions; introduce one complexity at a time
+- **Understand the fundamentals**: no black boxes; code shows understanding of the underlying mechanism
+- **Feature-branch development**: cut a branch from the current upstream; works with plain repos and `git worktree`
+- **Conventional Commits**: type + concise description (see `references/commit-messages.md`)
+- **Merge only after tests pass**: full tests and explicit user permission required; never merge on your own
+- **Cute-tone conversation**: all replies use a cute, gentle, playful tone
 
-本仓库根目录即为可安装的 skill 目录（符合 Grok / Claude Code 等 Agent Skill 约定）：
+## Skill package layout
+
+The repo root is itself an installable skill directory (per Grok / Claude Code Agent Skill conventions):
 
 ```
 coding-instructions/
-├── SKILL.md                      # 入口：frontmatter + 代理可执行规范
+├── SKILL.md                      # Entry point: frontmatter + agent-executable spec (English)
 ├── references/
-│   └── commit-messages.md        # 提交信息规范详细参考
-├── README.md
-├── CONTRIBUTING.md
+│   └── commit-messages.md        # Detailed commit-message reference (English)
+├── README.md                     # This file (English)
+├── README.zh-CN.md               # 中文 README
+├── CONTRIBUTING.md               # Contribution guide (English)
+├── CONTRIBUTING.zh-CN.md         # 中文贡献指南
 ├── LICENSE
 └── .gitignore
 ```
 
-| 文件 | 说明 |
-|------|------|
-| `SKILL.md` | Skill 入口。含 `name` / `description` frontmatter，以及编码、Git、语气规则 |
-| `references/commit-messages.md` | 提交格式、速查表、示例与 AI 提交守则 |
-| `README.md` | 项目简介与安装指南 |
-| `CONTRIBUTING.md` | 贡献指南 |
-| `LICENSE` | MIT 许可证 |
+| File | Purpose |
+| ---- | ------- |
+| `SKILL.md` | Skill entry. Contains `name`/`description` frontmatter plus coding, git, and tone rules |
+| `references/commit-messages.md` | Commit format, type table, examples, and AI commit rules |
+| `README.md` / `README.zh-CN.md` | Project intro and installation guide (EN / 中文) |
+| `CONTRIBUTING.md` / `CONTRIBUTING.zh-CN.md` | Contribution guide (EN / 中文) |
+| `LICENSE` | MIT license |
 
-## 安装
+## Install
 
-将本仓库（或其中 skill 目录）放到各工具的 skills 扫描路径即可。目录名建议为 `coding-instructions`。
+Place this repo (or its skill directory) on the skills scan path of your tool. Recommended directory name: `coding-instructions`.
 
 ### Grok
 
 ```bash
-# 用户级（所有项目可用）
-git clone <本仓库 URL> ~/.grok/skills/coding-instructions
+# user-level (available in all projects)
+git clone <repo URL> ~/.grok/skills/coding-instructions
 
-# 或仅当前项目
-git clone <本仓库 URL> .grok/skills/coding-instructions
+# or project-only
+git clone <repo URL> .grok/skills/coding-instructions
 ```
 
-- 斜杠命令：`/coding-instructions`
-- 自动触发：当描述匹配「写代码 / 提交 / 分支 / 合并 / 可爱语气」等意图时
+- Slash command: `/coding-instructions`
+- Auto-trigger: when the description matches intents like "write code / commit / branch / merge / cute tone"
 
 ### Claude Code
 
 ```bash
-# 用户级
-git clone <本仓库 URL> ~/.claude/skills/coding-instructions
+# user-level
+git clone <repo URL> ~/.claude/skills/coding-instructions
 
-# 或项目级
-git clone <本仓库 URL> .claude/skills/coding-instructions
+# or project-level
+git clone <repo URL> .claude/skills/coding-instructions
 ```
 
 ### Cursor
 
 ```bash
-git clone <本仓库 URL> ~/.cursor/skills/coding-instructions
-# 或
-git clone <本仓库 URL> .cursor/skills/coding-instructions
+git clone <repo URL> ~/.cursor/skills/coding-instructions
+# or
+git clone <repo URL> .cursor/skills/coding-instructions
 ```
 
-### 手动同步 / 软链
+### Manual sync / symlink
 
-若已 clone 到别处，可用软链避免重复拷贝：
+If already cloned elsewhere, symlink to avoid copies:
 
 ```bash
 ln -s /path/to/coding-instructions ~/.grok/skills/coding-instructions
 ln -s /path/to/coding-instructions ~/.claude/skills/coding-instructions
 ```
 
-> 更新 skill：在 clone 目录中 `git pull` 即可。
+> To update the skill: `git pull` in the clone.
 
-## 使用方式
+## Usage
 
-1. 按上文安装到对应 skills 目录
-2. 新开会话，或显式运行 `/coding-instructions`
-3. AI 代理在编码、提交、分支与合并过程中应自动遵循本规范
+1. Install into the skills directory as above
+2. Start a new session, or run `/coding-instructions` explicitly
+3. The AI agent should automatically follow the spec while coding, committing, branching, and merging
 
-**是否生效的简单判断**：若回复不再使用可爱语气，说明当前上下文可能未加载本 skill，请重新激活或检查安装路径。
+**Quick sanity check**: if replies are no longer in the cute tone, the skill is probably not loaded in the current context — re-activate it or check the install path.
 
-## 规范摘要
+## Spec summary
 
-### 编码原则
+### Coding principles
 
-1. 极简主义 — 从简开始  
-2. 「不要做英雄」— 先复制，再创新  
-3. 理解底层原理  
-4. 从简单到复杂  
-5. 简洁代码风格  
-6. 最小依赖  
+1. Minimalism — start simple
+2. "Don't be a hero" — copy first, innovate later
+3. Understand the fundamentals
+4. Simple to complex
+5. Clean code style
+6. Minimal dependencies
 
-### Git 工作流
+### Git workflow
 
-- 从当前上游切出 `feature|fix|test|docs/<描述>` 开发
-- 每完成一个逻辑步骤提交一次（格式见 `references/commit-messages.md`）
-- 合并前跑完整测试，向用户请求合并许可
-- 合入主分支使用 `git merge --no-ff`，禁止 squash / rebase merge 替代
-- 合并后删除已合并功能分支
+- Cut `feature|fix|test|docs/<description>` from the current upstream
+- Commit after each logical step (format: `references/commit-messages.md`)
+- Run the full test suite before merging and ask the user for permission
+- Merge into main with `git merge --no-ff`; never substitute squash/rebase merges
+- Delete merged feature branches
 
-### 对话语气
+### Tone
 
-- 可爱、温柔、撒娇；技术内容保持专业准确
+- Cute, gentle, playful; technical content stays professional and accurate
 
-完整可执行规范见 [`SKILL.md`](./SKILL.md)。
+Full executable spec: [`SKILL.md`](./SKILL.md).
 
-## 贡献
+## Contributing
 
-欢迎通过 Issue 或 Pull Request 提出改进建议。请先阅读 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。
+Suggestions via Issues or Pull Requests are welcome. Please read [`CONTRIBUTING.md`](./CONTRIBUTING.md) first (中文：[CONTRIBUTING.zh-CN.md](./CONTRIBUTING.zh-CN.md)).
 
-## 许可证
+## License
 
-本项目采用 [MIT 许可证](./LICENSE)。
+This project is licensed under [MIT](./LICENSE).

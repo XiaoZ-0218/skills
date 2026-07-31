@@ -1,77 +1,77 @@
-# 提交信息规范（Conventional Commits）
+# Commit Message Convention (Conventional Commits)
 
-`SKILL.md` 中的 Git 工作流引用本文档作为提交信息的详细参考。写提交信息前先对照本文件。
+The Git workflow in `SKILL.md` references this file as the detailed commit-message spec. Check it before writing any commit message.
 
-## 提交信息格式
-
-```
-<type>: <描述>
-```
-
-- `<type>`：英文类型，小写，见下方速查表
-- `<描述>`：简洁中文说明本次改动，避免空泛
-
-可选扩展（需要时使用，不强制）：
+## Format
 
 ```
-<type>(<scope>): <描述>
-
-<正文>
-
-<脚注>
+<type>: <description>
 ```
 
-- `<scope>`：影响的模块/范围，如 `feat(auth): ...`
-- 破坏性变更：在描述行加 `!`（如 `feat!: 移除旧版登录接口`），或在脚注写 `BREAKING CHANGE: ...`
+- `<type>`: lowercase English type, see the table below
+- `<description>`: concise summary of the change; avoid vagueness
 
-## Type 速查表
-
-| Type       | 使用场景                           |
-| ---------- | ---------------------------------- |
-| feat       | 新功能、新特性                     |
-| fix        | Bug 修复                           |
-| refactor   | 代码重构（不涉及功能变化）         |
-| style      | UI/样式调整                        |
-| docs       | 文档、注释更新                     |
-| wip        | 工作进行中，暂存进度               |
-| perf       | 性能优化                           |
-| test       | 添加或更新测试                     |
-| deps       | 依赖安装/更新/移除                 |
-| config     | 配置文件修改                       |
-| deploy     | 部署相关                           |
-| format     | 代码格式化                         |
-| build      | 构建系统/脚本修改                  |
-| chore      | 日常维护、清理、无关功能的杂项调整 |
-| remove     | 删除代码/文件                      |
-| move       | 移动/重命名文件                    |
-| revert     | 回退更改                           |
-
-## 提交频率原则
-
-- **频繁提交**：每完成一个逻辑步骤就提交一次，例如：
-  - 新功能完成、Bug 修复、重构完成
-  - WIP 草稿、依赖更新、文档/注释更新
-  - 测试通过、样式/UI 调整
-- **宁多勿少**：不要攒多个改动一起提交；每个提交只做一件事
-
-## 示例
+Optional extensions (use when needed, not required):
 
 ```
-feat: 添加用户登录功能
-fix: 修复密码重置接口空指针异常
-refactor: 提取用户认证逻辑到独立服务
-style: 调整首页卡片阴影效果
-docs: 更新 API 接口文档
-wip: 购物车模块开发中
-test: 添加用户注册单元测试
-deps: 安装 axios 依赖
-chore: 清理无用注释与日志
+<type>(<scope>): <description>
+
+<body>
+
+<footer>
 ```
 
-## AI 代理提交守则
+- `<scope>`: affected module/area, e.g. `feat(auth): ...`
+- Breaking changes: append `!` after the type (e.g. `feat!: drop the legacy login API`), or add `BREAKING CHANGE: ...` in the footer
 
-1. **每次代码变更后主动提交**，不要等待用户要求才提交
-2. 提交信息要**简洁但有意义**，能看出改了什么
-3. 用户要求「保存进度」或「先放着」→ 使用 `wip` 提交
-4. 多个修改意图混在一起时，**拆分成多个提交**
-5. 提交格式与类型选择必须严格遵循本文件
+## Type table
+
+| Type     | When to use                                  |
+| -------- | -------------------------------------------- |
+| feat     | New feature                                  |
+| fix      | Bug fix                                      |
+| refactor | Code restructuring without behavior change   |
+| style    | UI/styling tweaks                            |
+| docs     | Documentation or comment updates             |
+| wip      | Work in progress; checkpointing              |
+| perf     | Performance improvement                      |
+| test     | Adding or updating tests                     |
+| deps     | Dependency install/update/removal            |
+| config   | Configuration file changes                   |
+| deploy   | Deployment related                           |
+| format   | Code formatting                              |
+| build    | Build system/scripts changes                 |
+| chore    | Maintenance, cleanup, misc non-feature work  |
+| remove   | Deleting code/files                          |
+| move     | Moving/renaming files                        |
+| revert   | Reverting changes                            |
+
+## Commit frequency
+
+- **Commit often**: once per logical step, e.g.:
+  - feature completed, bug fixed, refactor done
+  - WIP checkpoint, dependency update, docs/comment update
+  - tests passing, style/UI tweaks
+- **Err on the side of more commits**: don't batch unrelated changes; each commit does one thing
+
+## Examples
+
+```
+feat: add user login
+fix: fix null pointer in password reset API
+refactor: extract auth logic into a dedicated service
+style: tweak homepage card shadow
+docs: update API docs
+wip: shopping cart module in progress
+test: add unit tests for registration
+deps: add axios
+chore: remove dead comments and logs
+```
+
+## AI agent commit rules
+
+1. **Commit proactively after every code change**; don't wait for the user to ask
+2. Messages must be **concise but meaningful** — it should be clear what changed
+3. User asks to "save progress" or "leave it" → use a `wip` commit
+4. Mixed intents → **split into multiple commits**
+5. Format and type choice must strictly follow this file
