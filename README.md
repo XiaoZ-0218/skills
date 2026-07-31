@@ -1,6 +1,6 @@
 # coding-instructions
 
-> Andrej Karpathy 编程准则 + Gitmoji 提交规范 + 功能分支工作流 + 可爱语气回复规范
+> Andrej Karpathy 编程准则 + Conventional Commits 提交规范 + 功能分支工作流 + 可爱语气回复规范
 
 一套面向 AI 辅助编程的 **Agent Skill** 包：帮助个人与小团队在借助 AI 写代码时保持代码简洁、提交历史清晰、合并流程可控。
 
@@ -10,7 +10,7 @@
 - **先复制，再创新**：优先复用成熟方案，一次只引入一个复杂度
 - **理解底层原理**：避免黑盒调用，代码体现对底层机制的理解
 - **功能分支开发**：从当前上游分支切出独立分支；兼容普通仓库与 `git worktree`
-- **Gitmoji 提交规范**：emoji + type + 中文描述（详见 `references/commit-messages.md`）
+- **Conventional Commits 提交规范**：type + 中文描述（详见 `references/commit-messages.md`）
 - **测试通过后合并**：合并前必须完成测试并请求许可，禁止自行合并
 - **可爱语气对话**：所有回复使用可爱、温柔、撒娇的语气
 
@@ -22,7 +22,7 @@
 coding-instructions/
 ├── SKILL.md                      # 入口：frontmatter + 代理可执行规范
 ├── references/
-│   └── commit-messages.md        # Gitmoji 提交详细参考
+│   └── commit-messages.md        # 提交信息规范详细参考
 ├── README.md
 ├── CONTRIBUTING.md
 ├── LICENSE

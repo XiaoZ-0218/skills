@@ -47,7 +47,7 @@
    > 若通过 `git worktree` 维护，请从对应 worktree 的上游分支切出功能分支，并在该 worktree 内开发。
 
 4. 在功能分支上修改，每次只做一个逻辑改动。
-5. 提交遵循本项目的 Gitmoji 规范，见 [`references/commit-messages.md`](./references/commit-messages.md)。
+5. 提交遵循本项目的 Conventional Commits 规范，见 [`references/commit-messages.md`](./references/commit-messages.md)。
 6. 确保 Markdown 格式正确、链接可用；改完后本地确认：
    - `SKILL.md` 顶部 YAML frontmatter 可解析（`name`、`description` 必填）
    - `SKILL.md` 内指向 `references/` 的相对链接有效

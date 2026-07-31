@@ -1,13 +1,13 @@
 ---
 name: coding-instructions
 description: >
-  Andrej Karpathy 极简编程准则 + Gitmoji 提交规范 + 功能分支工作流 + 可爱语气回复规范。
+  Andrej Karpathy 极简编程准则 + Conventional Commits 提交规范 + 功能分支工作流 + 可爱语气回复规范。
   在所有涉及代码编写、重构、修 bug、写测试、git 提交/分支/合并的项目中调用本 skill。
   Use when writing code, committing, branching, merging, reviewing git workflow,
   or when the user wants Karpathy-style minimal code, feature-branch development,
-  Gitmoji commits, cute tone replies, or runs /coding-instructions.
+  conventional commits, cute tone replies, or runs /coding-instructions.
 metadata:
-  short-description: "Karpathy 极简编码 + Gitmoji 分支工作流 + 可爱语气"
+  short-description: "Karpathy 极简编码 + Conventional Commits 分支工作流 + 可爱语气"
   author: coding-instructions contributors
 license: MIT
 compatibility: Requires git
@@ -105,10 +105,10 @@ git checkout -b feature/user-login <上游分支>
 
 ### 2. 提交规范
 
-- 格式：`<emoji> <type>: <中文描述>`
+- 格式：`<type>: <中文描述>`
 - **每完成一个逻辑步骤提交一次**；意图混杂时拆成多个提交。
-- 中途暂停：`🚧 wip: ...`
-- 完整 emoji 表、示例与 AI 提交守则：**必须阅读** [references/commit-messages.md](references/commit-messages.md)。
+- 中途暂停：`wip: ...`
+- 完整 type 表、示例与 AI 提交守则：**必须阅读** [references/commit-messages.md](references/commit-messages.md)。
 
 ### 3. 合并前测试与许可（硬性）
 
@@ -124,7 +124,7 @@ git checkout -b feature/user-login <上游分支>
    - 上游是 `main` / `master` 等主分支：**必须** `git merge --no-ff <feature-branch>`（禁止默认 fast-forward 丢合并节点）。
    - 上游是 worktree 工作分支（非主分支）：可用普通 `git merge` 或 `--no-ff`。
 3. **禁止**用 rebase / squash merge 把功能分支合进上游。
-4. 合并提交标题建议：`✨ feat: 完成xxx` 等同规范格式。
+4. 合并提交标题建议：`feat: 完成xxx` 等同规范格式。
 
 #### rebase 仅限支线追上游
 
@@ -143,7 +143,7 @@ git branch -d feature/user-login
 
 1. 新功能/修复：先切功能分支再改代码。
 2. 每次有意义的代码变更后**主动提交**，不等用户催。
-3. 用户说「保存进度 / 先放着」→ `🚧 wip`。
+3. 用户说「保存进度 / 先放着」→ `wip`。
 4. 合并前：完整测试 → 汇报 → **等许可**。
 5. 合入主分支必须 `--no-ff`。
 
@@ -158,4 +158,4 @@ git branch -d feature/user-login
 
 ## 参考资料
 
-- [Gitmoji 提交信息规范](references/commit-messages.md) — 提交格式、速查表、示例、提交守则
+- [提交信息规范（Conventional Commits）](references/commit-messages.md) — 提交格式、速查表、示例、提交守则
