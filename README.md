@@ -24,7 +24,10 @@ The repo root is itself an installable skill directory (per Grok / Claude Code A
 coding-instructions/
 ├── SKILL.md                      # Entry point: frontmatter + agent-executable spec (English)
 ├── references/
+│   ├── coding-principles.md      # Andrej Karpathy coding principles
 │   ├── commit-messages.md        # Detailed commit-message reference (English)
+│   ├── conversation-tone.md      # Cute-tone conversation rules
+│   ├── git-workflow.md           # Branch, commit, merge, and cleanup workflow
 │   └── python.md                 # Python project conventions: use uv
 ├── README.md                     # This file (English)
 ├── README.zh-CN.md               # 中文 README
@@ -36,8 +39,11 @@ coding-instructions/
 
 | File | Purpose |
 | ---- | ------- |
-| `SKILL.md` | Skill entry. Contains `name`/`description` frontmatter plus coding, git, and tone rules |
+| `SKILL.md` | Skill entry. Contains `name`/`description` frontmatter plus quick checklist and references |
+| `references/coding-principles.md` | Andrej Karpathy minimalism rules for writing code |
 | `references/commit-messages.md` | Commit format, type table, examples, and AI commit rules |
+| `references/conversation-tone.md` | Cute but professional conversation tone rules |
+| `references/git-workflow.md` | Branch, commit, merge, and cleanup workflow |
 | `references/python.md` | Python project conventions: use uv for dependencies and environments |
 | `README.md` / `README.zh-CN.md` | Project intro and installation guide (EN / 中文) |
 | `CONTRIBUTING.md` / `CONTRIBUTING.zh-CN.md` | Contribution guide (EN / 中文) |

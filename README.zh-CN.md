@@ -24,7 +24,10 @@
 coding-instructions/
 ├── SKILL.md                      # 入口：frontmatter + 代理可执行规范（英文）
 ├── references/
+│   ├── coding-principles.md      # Andrej Karpathy 编码原则
 │   ├── commit-messages.md        # 提交信息规范详细参考（英文）
+│   ├── conversation-tone.md      # 可爱语气对话规范
+│   ├── git-workflow.md           # 分支、提交、合并、清理工作流
 │   └── python.md                 # Python 项目约定：使用 uv
 ├── README.md                     # 英文 README
 ├── README.zh-CN.md               # 本文件（中文）
@@ -36,8 +39,11 @@ coding-instructions/
 
 | 文件 | 说明 |
 |------|------|
-| `SKILL.md` | Skill 入口。含 `name` / `description` frontmatter，以及编码、Git、语气规则 |
+| `SKILL.md` | Skill 入口。含 `name` / `description` frontmatter、快速检查清单与参考链接 |
+| `references/coding-principles.md` | Andrej Karpathy 编码原则 |
 | `references/commit-messages.md` | 提交格式、速查表、示例与 AI 提交守则 |
+| `references/conversation-tone.md` | 可爱且专业的对话语气规范 |
+| `references/git-workflow.md` | 分支、提交、合并、清理工作流 |
 | `references/python.md` | Python 项目约定：使用 uv 管理依赖与环境 |
 | `README.md` / `README.zh-CN.md` | 项目简介与安装指南（英文 / 中文） |
 | `CONTRIBUTING.md` / `CONTRIBUTING.zh-CN.md` | 贡献指南（英文 / 中文） |
