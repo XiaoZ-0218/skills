@@ -24,7 +24,8 @@
 coding-instructions/
 ├── SKILL.md                      # 入口：frontmatter + 代理可执行规范（英文）
 ├── references/
-│   └── commit-messages.md        # 提交信息规范详细参考（英文）
+│   ├── commit-messages.md        # 提交信息规范详细参考（英文）
+│   └── python.md                 # Python 项目约定：使用 uv
 ├── README.md                     # 英文 README
 ├── README.zh-CN.md               # 本文件（中文）
 ├── CONTRIBUTING.md               # 英文贡献指南
@@ -37,6 +38,7 @@ coding-instructions/
 |------|------|
 | `SKILL.md` | Skill 入口。含 `name` / `description` frontmatter，以及编码、Git、语气规则 |
 | `references/commit-messages.md` | 提交格式、速查表、示例与 AI 提交守则 |
+| `references/python.md` | Python 项目约定：使用 uv 管理依赖与环境 |
 | `README.md` / `README.zh-CN.md` | 项目简介与安装指南（英文 / 中文） |
 | `CONTRIBUTING.md` / `CONTRIBUTING.zh-CN.md` | 贡献指南（英文 / 中文） |
 | `LICENSE` | MIT 许可证 |

@@ -88,6 +88,21 @@ git add -A && git commit -m "chore: initial commit"
 
 - Do **not** attach remotes automatically; the user handles remotes.
 
+#### Python projects
+
+If the project uses Python, use **[uv](https://docs.astral.sh/uv/)** for dependency and environment management:
+
+```bash
+uv init
+uv python pin 3.12
+uv add pytest
+uv run pytest
+```
+
+- Prefer `uv add`, `uv run`, and `uv sync` over `pip`, `pipenv`, `poetry`, or `conda`.
+- Commit `uv.lock` for reproducible environments.
+- Full conventions: [references/python.md](references/python.md).
+
 ### 1. Feature-branch development
 
 Before starting a feature/fix, cut a branch from upstream:
@@ -159,3 +174,4 @@ git branch -d feature/user-login
 ## References
 
 - [Commit message convention (Conventional Commits)](references/commit-messages.md) — format, type table, examples, commit rules
+- [Python project conventions](references/python.md) — use uv, lock files, running code
