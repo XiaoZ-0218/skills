@@ -1,0 +1,289 @@
+{
+  "A6-EOE": {
+    "aircraft": "Airbus A380-800",
+    "airline": "阿联酋航空",
+    "livery": "阿森纳(Arsenal)彩绘",
+    "notes": "2026-08-16 照片核实,机腹红色Arsenal涂装",
+    "updated": "2026-08-16"
+  },
+  "B-1356": {
+    "aircraft": "Boeing 787-9",
+    "airline": "Xiamen Air",
+    "livery": "United Dream / 联合梦想号",
+    "notes": "厦航联合国可持续发展目标彩绘 789",
+    "updated": "2026-08-16 (seed)"
+  },
+  "B-16333": {
+    "aircraft": "Airbus A330-300",
+    "airline": "EVA Air",
+    "livery": "Hello Kitty",
+    "notes": "长荣 Hello Kitty 彩绘 A333",
+    "updated": "2026-08-16 (seed)"
+  },
+  "B-1838": {
+    "aircraft": "Airbus A321",
+    "airline": "中国东方航空",
+    "livery": "天合联盟涂装",
+    "notes": "2026-08-16 照片核实",
+    "updated": "2026-08-16"
+  },
+  "B-2002": {
+    "aircraft": "Boeing 777-300ER",
+    "airline": "China Eastern",
+    "livery": "China International Import Expo / 进博号",
+    "notes": "东航进博会彩绘 77W",
+    "updated": "2026-08-16 (seed)"
+  },
+  "B-2006": {
+    "aircraft": "Boeing 777-300ER",
+    "airline": "Air China",
+    "livery": "Love China / 爱中国",
+    "notes": "国航爱中国彩绘 77W",
+    "updated": "2026-08-16 (seed)"
+  },
+  "B-2032": {
+    "aircraft": "Boeing 777-300ER",
+    "airline": "Air China",
+    "livery": "Star Alliance",
+    "notes": "国航星空联盟彩绘 77W",
+    "updated": "2026-08-16 (seed)"
+  },
+  "B-2035": {
+    "aircraft": "Boeing 777-300ER",
+    "airline": "Air China",
+    "livery": "Smiling China / 微笑中国",
+    "notes": "国航微笑中国彩绘 77W",
+    "updated": "2026-08-16 (seed)"
+  },
+  "B-2047": {
+    "aircraft": "Boeing 777-300ER",
+    "airline": "Air China",
+    "livery": "50th Anniversary China-France / 中法建交50周年",
+    "notes": "国航中法建交彩绘 77W",
+    "updated": "2026-08-16 (seed)"
+  },
+  "B-208A": {
+    "aircraft": "Boeing 787-9",
+    "airline": "吉祥航空",
+    "livery": "丝路飘带涂装",
+    "notes": "2026-08-16 照片核实",
+    "updated": "2026-08-16"
+  },
+  "B-209R": {
+    "aircraft": "Boeing 787-9",
+    "airline": "吉祥航空",
+    "livery": "中国牡丹彩绘",
+    "notes": "2026-08-16 照片核实",
+    "updated": "2026-08-16"
+  },
+  "B-301D": {
+    "aircraft": "Airbus A350-900",
+    "airline": "Sichuan Airlines",
+    "livery": "Panda / 熊猫彩绘",
+    "notes": "川航熊猫彩绘 A359",
+    "updated": "2026-08-16 (seed)"
+  },
+  "B-302X": {
+    "aircraft": "Airbus A321",
+    "airline": "天津航空",
+    "livery": "第100架飞机涂装",
+    "notes": "2026-08-16 照片核实",
+    "updated": "2026-08-16"
+  },
+  "B-5908": {
+    "aircraft": "Airbus A330-200",
+    "airline": "中国东方航空",
+    "livery": "天合联盟涂装",
+    "notes": "2026-08-16 照片核实",
+    "updated": "2026-08-16"
+  },
+  "B-5937": {
+    "aircraft": "Airbus A330-200",
+    "airline": "中国东方航空",
+    "livery": "哈尔滨2025亚冬会涂装",
+    "notes": "2026-08-16 照片核实,蓝白涂装",
+    "updated": "2026-08-16"
+  },
+  "B-5940": {
+    "aircraft": "Airbus A330-300",
+    "airline": "中国南方航空",
+    "livery": "进博会(CIIE)彩绘",
+    "notes": "2026-08-16 照片核实",
+    "updated": "2026-08-16"
+  },
+  "B-5976": {
+    "aircraft": "Airbus A330-300",
+    "airline": "China Eastern",
+    "livery": "Shanghai Disney Resort / 迪士尼",
+    "notes": "东航上海迪士尼彩绘 A333",
+    "updated": "2026-08-16 (seed)"
+  },
+  "B-6120": {
+    "aircraft": "Airbus A330-300",
+    "airline": "China Eastern",
+    "livery": "Toy Story / 玩具总动员",
+    "notes": "东航玩具总动员彩绘 A333",
+    "updated": "2026-08-16 (seed)"
+  },
+  "B-6507": {
+    "aircraft": "Airbus A330-300",
+    "airline": "中国东方航空",
+    "livery": "上海迪士尼度假区涂装",
+    "notes": "2026-08-16 照片核实,米奇蓝色涂装",
+    "updated": "2026-08-16"
+  },
+  "B-6998": {
+    "aircraft": "Boeing 787-9",
+    "airline": "Hainan Airlines",
+    "livery": "Kung Fu Panda / 功夫熊猫",
+    "notes": "海航功夫熊猫彩绘 789",
+    "updated": "2026-08-16 (seed)"
+  },
+  "B-8119": {
+    "aircraft": "Airbus A320",
+    "airline": "中国东方航空",
+    "livery": "迪士尼疯狂动物城涂装",
+    "notes": "2026-08-16 照片核实,蓝橙卡通涂装",
+    "updated": "2026-08-16"
+  },
+  "B-9957": {
+    "aircraft": "Airbus A321",
+    "airline": "吉祥航空",
+    "livery": "上海乐高乐园涂装",
+    "notes": "2026-08-16 照片核实,全黄机身",
+    "updated": "2026-08-16"
+  },
+  "B-KPB": {
+    "aircraft": "Boeing 777-300ER",
+    "airline": "Cathay Pacific",
+    "livery": "Spirit of Hong Kong / 香港精神号",
+    "notes": "国泰香港精神号 77W",
+    "updated": "2026-08-16 (seed)"
+  },
+  "D-ABYT": {
+    "aircraft": "Boeing 747-8i",
+    "airline": "Lufthansa",
+    "livery": "Retro / 汉莎复古涂装",
+    "notes": "汉莎复古 748",
+    "updated": "2026-08-16 (seed)"
+  },
+  "JA381A": {
+    "aircraft": "Airbus A380",
+    "airline": "ANA",
+    "livery": "Flying Honu 'Lani' (blue)",
+    "notes": "全日空蓝海龟 A380，东京-檀香山线",
+    "updated": "2026-08-16 (seed)"
+  },
+  "JA382A": {
+    "aircraft": "Airbus A380",
+    "airline": "ANA",
+    "livery": "Flying Honu 'Kai' (green)",
+    "notes": "全日空绿海龟 A380，东京-檀香山线",
+    "updated": "2026-08-16 (seed)"
+  },
+  "JA383A": {
+    "aircraft": "Airbus A380",
+    "airline": "ANA",
+    "livery": "Flying Honu 'La' (orange)",
+    "notes": "全日空橙海龟 A380，东京-檀香山线",
+    "updated": "2026-08-16 (seed)"
+  },
+  "B-1788": {
+    "aircraft": "Boeing 737-800",
+    "airline": "中国东方航空",
+    "livery": "云南孔雀涂装",
+    "notes": "2026-08-16 照片核实,白底孔雀彩绘",
+    "updated": "2026-08-16"
+  },
+  "B-8433": {
+    "aircraft": "Airbus A320",
+    "airline": "长龙航空",
+    "livery": "浙商银行涂装",
+    "notes": "2026-08-16 照片核实,青机身卡通;FR24误标为Zhejiang Asku",
+    "updated": "2026-08-16"
+  },
+  "B-1008": {
+    "aircraft": "Airbus A319",
+    "airline": "西藏航空",
+    "livery": "神奇林芝涂装",
+    "notes": "2026-08-16 照片核实,彩虹+风景",
+    "updated": "2026-08-16"
+  },
+  "B-9963": {
+    "aircraft": "Airbus A320",
+    "airline": "天津航空",
+    "livery": "第六届东亚运动会涂装",
+    "notes": "2026-08-16 照片核实,彩虹+绿色",
+    "updated": "2026-08-16"
+  },
+  "B-6958": {
+    "aircraft": "Airbus A320",
+    "airline": "首都航空",
+    "livery": "奔腾T99涂装",
+    "notes": "2026-08-16 照片核实,蓝机身汽车彩绘",
+    "updated": "2026-08-16"
+  },
+  "B-1979": {
+    "aircraft": "Boeing 737-800",
+    "airline": "中国南方航空",
+    "livery": "老家河南涂装",
+    "notes": "2026-08-16 照片核实,粉色牡丹",
+    "updated": "2026-08-16"
+  },
+  "B-1983": {
+    "aircraft": "Boeing 737-800",
+    "airline": "山东航空",
+    "livery": "DEEJ得捷电子涂装",
+    "notes": "2026-08-16 照片核实,红色",
+    "updated": "2026-08-16"
+  },
+  "B-8068": {
+    "aircraft": "Airbus A321",
+    "airline": "吉祥航空",
+    "livery": "中国红牡丹涂装",
+    "notes": "2026-08-16 照片核实,红机身金牡丹",
+    "updated": "2026-08-16"
+  },
+  "B-6635": {
+    "aircraft": "Airbus A320",
+    "airline": "中国东方航空",
+    "livery": "上海迪士尼度假区涂装",
+    "notes": "2026-08-16 照片核实,蓝色米奇",
+    "updated": "2026-08-16"
+  },
+  "B-5931": {
+    "aircraft": "Airbus A330-200",
+    "airline": "中国东方航空",
+    "livery": "人民网涂装",
+    "notes": "2026-08-16 照片核实,红橙抽象彩绘",
+    "updated": "2026-08-16"
+  },
+  "B-8700": {
+    "aircraft": "Airbus A320",
+    "airline": "春秋航空",
+    "livery": "鼎植口腔涂装",
+    "notes": "2026-08-16 照片核实,蓝机身+牙医广告",
+    "updated": "2026-08-16"
+  },
+  "B-1316": {
+    "aircraft": "Boeing 737-800",
+    "airline": "中国东方航空",
+    "livery": "达菲好友号涂装",
+    "notes": "2026-08-16 照片核实,黄底卡通",
+    "updated": "2026-08-16"
+  },
+  "B-308T": {
+    "aircraft": "Airbus A350-900",
+    "airline": "中国南方航空",
+    "livery": "第十五届全运会涂装",
+    "notes": "2026-08-16 照片核实,彩色 A359",
+    "updated": "2026-08-16"
+  },
+  "B-5920": {
+    "aircraft": "Airbus A330-200",
+    "airline": "中国东方航空",
+    "livery": "上海2026世界技能大赛涂装",
+    "notes": "2026-08-16 照片核实,绿色卡通",
+    "updated": "2026-08-16"
+  }
+}
