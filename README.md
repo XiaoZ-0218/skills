@@ -1,24 +1,30 @@
 # Skills
 
-Agent skill 合集仓库，每个子目录是一个独立的 skill（含 `SKILL.md`）。
+Agent skill 合集仓库，采用插件市场（plugin marketplace）结构：每个 `skills/` 子目录是一个独立的 skill（含 `SKILL.md`）。
 
 ## 收录的 Skills
 
 | Skill | 说明 |
 |-------|------|
-| [coding-instructions](./coding-instructions) | 编码规范与协作指令 |
-| [multi-agent-workflow](./multi-agent-workflow) | 多智能体工作流编排 |
-| [humanizer-zh](./humanizer-zh) | 中文文本人性化润色 |
-| [rare-plane-spotter](./rare-plane-spotter) | 稀有彩绘飞机查询 |
-| [web-video-presentation](./web-video-presentation) | 网页视频演示生成 |
+| [coding-instructions](./skills/coding-instructions) | 编码规范与协作指令 |
+| [multi-agent-workflow](./skills/multi-agent-workflow) | 多智能体工作流编排 |
+| [humanizer-zh](./skills/humanizer-zh) | 中文文本人性化润色 |
+| [rare-plane-spotter](./skills/rare-plane-spotter) | 稀有彩绘飞机查询 |
+| [web-video-presentation](./skills/web-video-presentation) | 网页视频演示生成 |
 
 ## 安装
 
-克隆本仓库后，将需要的 skill 目录链接或复制到 agent 的 skills 目录：
+方式一：作为插件市场一键安装（推荐）：
+
+```
+/plugin marketplace add XiaoZ-0218/skills
+```
+
+方式二：手动克隆后链接需要的 skill：
 
 ```bash
 git clone https://github.com/XiaoZ-0218/skills.git
-ln -s "$PWD/skills/coding-instructions" ~/.zcode/skills/coding-instructions
+ln -s "$PWD/skills/skills/coding-instructions" ~/.zcode/skills/coding-instructions
 ```
 
 ## 独立仓库的工具型 Skills

@@ -1,0 +1,25 @@
+{
+  "name": "xiaoz-skills",
+  "owner": {
+    "name": "XiaoZ-0218"
+  },
+  "metadata": {
+    "description": "XiaoZ 的公开 agent skill 合集",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "xiaoz-skills",
+      "description": "编码规范、多智能体工作流、中文润色、飞机查询、网页视频演示等个人 skills",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/coding-instructions",
+        "./skills/multi-agent-workflow",
+        "./skills/humanizer-zh",
+        "./skills/rare-plane-spotter",
+        "./skills/web-video-presentation"
+      ]
+    }
+  ]
+}
