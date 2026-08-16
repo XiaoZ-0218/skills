@@ -1,0 +1,18 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Local environment
+.env
+.env.local
+
+# Backup files
+*~
