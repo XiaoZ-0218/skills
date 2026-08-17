@@ -24,8 +24,10 @@ Agent skill 合集仓库，采用插件市场（plugin marketplace）结构：�
 
 ```bash
 git clone https://github.com/XiaoZ-0218/skills.git
-ln -s "$PWD/skills/skills/coding-instructions" ~/.zcode/skills/coding-instructions
+ln -sfn "$PWD/skills/skills/coding-instructions" ~/.agents/skills/coding-instructions
 ```
+
+手动安装请链到 `~/.agents/skills/<name>`。不要链到 `~/.zcode/skills/`，同名时它会盖住 agents 里的副本。
 
 ## 独立仓库的工具型 Skills
 
@@ -33,4 +35,4 @@ ln -s "$PWD/skills/skills/coding-instructions" ~/.zcode/skills/coding-instructio
 
 - [bt-search](https://github.com/XiaoZ-0218/bt-search) — BT 资源搜索 CLI（Python 包）
 - [use-grok](https://github.com/XiaoZ-0218/use-grok) — Grok 代码评审 CLI（npm 包）
-- [flights-kml-search](https://github.com/XiaoZ-0218/flights-kml-search) — 航班 KML 轨迹查询（Python 包）
+- [flight-kml-search](https://github.com/XiaoZ-0218/flight-kml-search) — 航班 KML 轨迹查询（Python 包；skill 名与仓库名均为 `flight-kml-search`）

@@ -100,4 +100,4 @@ uv run ".../main.py" enrich B-2006 HL8509 9V-SKI
 - 涂装库 `liveries.json` 是种子数据 + 运行时累积，条目可能过时（飞机换涂装），靠第 4 步照片核实纠偏。
 - FR24 页面/接口结构若变动，浏览器抓取失败时：退到 `live` 快照出报告并明确告知用户。
 - 中国大陆社区 ADS-B 覆盖差，不要依赖 adsb.lol/OpenSky 等社区源（实测不可用/配额极小）。
-- 开发完成后需同步到 `~/.zcode/skills/rare-plane-spotter/`（同名双目录，与 flight-kml-search 的惯例一致）。
+- 开发完成后需同步到 `~/.agents/skills/rare-plane-spotter/`。
